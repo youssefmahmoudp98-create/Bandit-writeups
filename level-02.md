@@ -12,7 +12,7 @@ What was done:
 
 What was understood: `-` on its own can be interpreted as a stndin by command-line tools rather than as a literal filename. Prefixing a filename with `./` forces it to be read as a path instead, removing that ambiguity.
 
-Vulnerability type: special-character filename ambiguity — a case where a tool's default interpretation of an input doesn't match what was actually intended.
+Vulnerability type: special-character filename ambiguity — a case where a tool's default interpretation of an input doesn't match what was actually intended, which might lead to unexpected behaviour by engineers leading to potential security issues on the broader scale
 
 Real world version: this is the same underlying category of mistake as injection-style vulnerabilities — a program treating something as an instruction when it was meant to be plain data. Command injection is a more dangerous version of exactly this pattern.
 
