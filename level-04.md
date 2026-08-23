@@ -30,4 +30,4 @@ Vulnerability type: this level demonstrates the importance of understanding file
 
 Real world version: the same filesystem concepts appear when investigating configuration files, application directories, logs, credentials, and other files that may not appear in a standard directory listing.
 
-Cloud version: not yet explored.
+Cloud version: not yet explored..
