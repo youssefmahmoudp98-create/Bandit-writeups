@@ -5,10 +5,15 @@ Goal: read the password from a hidden file located inside the `inhere` directory
 What was done:
 
 `ls`                    -> located `inhere` in the home directory
+
 `cat inhere`             -> failed: `cat: inhere: Is a directory`
+
 `file inhere`            -> confirmed `inhere` is a directory
+
 `cd inhere`              -> entered the directory
+
 `ls -a`                  -> showed hidden entries: `.` `..` `...Hiding-From-You`
+
 `cat ...Hiding-From-You` -> displayed the password
 
 After logging in, `ls` was used to inspect the home directory and locate `inhere`. The first attempt was `cat inhere`, which failed with `cat: inhere: Is a directory`. This demonstrated that `cat` is used to read files, not directories. The type of `inhere` was then confirmed with `file inhere`, which identified it as a directory.
