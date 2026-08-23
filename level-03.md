@@ -5,10 +5,15 @@ Goal: read the password from a file named `--spaces in this filename--`, located
 What was done:
 
 `ls`                                       -> confirmed the exact filename
+
 `cat --spaces in this filename--`          -> failed: unrecognized option
+
 `cat -- --spaces in this filename--`       -> failed: still split on spaces
+
 `cat "-- --spaces in this filename--"`     -> failed: `--` no longer acted as a terminator
+
 `cat "./--spaces in this filename--"`      -> worked
+
 `cat -- "--spaces in this filename--"`     -> also worked
 
 `ls` was used first to confirm the exact filename. The first attempt, running `cat` with the filename typed directly, failed — but not because the shell itself treated `--spaces` as an option. The shell's role here is to split the unquoted text on spaces and pass the resulting pieces to `cat` as separate arguments: `--spaces`, `in`, `this`, `filename--`. It was `cat` itself, once it received `--spaces` as one of its arguments, that interpreted it as an unrecognized option flag. The shell parses and hands off arguments; the program decides what those arguments mean.
