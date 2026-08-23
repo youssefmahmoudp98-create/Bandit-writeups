@@ -5,10 +5,15 @@ Goal: read the password from the only human-readable file located inside the `in
 What was done:
 
 `ls`                    -> located `inhere` in the home directory
+
 `cd inhere`             -> entered the directory
+
 `ls -a`                 -> listed all entries, including `.` `..` and `-file00` through `-file09`
+
 `cat -- "-file01"`      -> read one file successfully, but did not contain the password
+
 `file ./-file*`         -> identified the types of all files matching the pattern
+
 `cat -- "-file07"`      -> displayed the password
 
 After logging in, `ls` was used to inspect the home directory and locate `inhere`. The `cd` command was then used to enter the directory with `cd inhere`.
