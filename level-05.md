@@ -30,7 +30,6 @@ What was understood:
 - `file` can be used to determine the type of a file.
 - `*` can act as a wildcard in shell filename expansion, matching any sequence of characters.
 - A previously learned concept can be tested in a new context rather than treating each command as isolated syntax.
-- The `./` prefix can be used to explicitly treat filenames beginning with `-` as paths.
 - `--` can be passed as a separate argument to indicate the end of options, allowing filenames beginning with `-` to be handled safely.
 - `.` and `..` retain their special meanings regardless of their position in a directory listing.
 
