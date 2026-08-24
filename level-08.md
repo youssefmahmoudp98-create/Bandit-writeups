@@ -1,4 +1,4 @@
-Level 7 to 8
+## Level 7 to 8
 
 Goal: find the password for the next level in "data.txt", next to the word "millionth".
 
