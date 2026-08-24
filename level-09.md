@@ -1,12 +1,15 @@
-Level 8 to 9
+## Level 8 to 9
 
 Goal: find the password in "data.txt", where the password occurs only once.
 
 What was done:
 
 "ls"                         -> confirmed that "data.txt" was present in the home directory
+
 "sort data.txt"              -> sorted the contents so identical lines were placed next to each other
+
 "uniq -u"                    -> filtered the sorted output to display only lines that were not duplicated
+
 "sort data.txt \| uniq -u"   -> combined both commands and displayed the password
 
 After logging in, "ls" was used to confirm that "data.txt" was present in the home directory.
