@@ -1,4 +1,4 @@
-Level 6 to 7
+## Level 6 to 7
 
 Goal: find the password stored somewhere on the server, owned by user "bandit7", owned by group "bandit6", and 33 bytes in size.
 
