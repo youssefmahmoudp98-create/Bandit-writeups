@@ -1,17 +1,17 @@
-Level 5 to 6
+## Level 5 to 6
 
 Goal: find the password stored in a human-readable file that is 1033 bytes in size and is not executable.
 
 What was done:
 
-"ls -a"                         -> inspected the home directory and located "inhere"
-"cd inhere"                     -> entered the directory
-"ls"                            -> listed "maybehere00" through "maybehere20"
-"file -l maybehere*"            -> produced a large amount of output because "-l" has a command-specific meaning and is not a universal "long format" option
-"file maybehere*"              -> identified the "maybehere" entries as directories
-"find . -type f -exec file {} \; | grep -i "ascii"" -> searched for regular files and filtered their "file" output for ASCII text
-"find . -type f -size 1033c"   -> located the file with a size of exactly 1033 bytes
-"cat ./<filename>"              -> displayed the password
+"ls -a"                                                   -> inspected the home directory and located "inhere"
+"cd inhere"                                               -> entered the directory
+"ls"                                                      -> listed "maybehere00" through "maybehere20"
+"file -l maybehere*"                                      -> produced a large amount of output because "-l" has a command-specific meaning and is not a universal "long format" option
+"file maybehere*"                                         -> identified the "maybehere" entries as directories
+"find . -type f -exec file {} \; | grep -i "ascii""      -> searched for regular files and filtered their "file" output for ASCII text
+"find . -type f -size 1033c"                             -> located the file with a size of exactly 1033 bytes
+"cat ./<filename>"                                        -> displayed the password
 "find . -type f -size 1033c ! -executable -exec file {} \; | grep -i "ascii"" -> combined the known conditions into a single search
 
 After logging in, "ls -a" was used to inspect the home directory and locate "inhere". The "cd" command was then used to enter the directory with "cd inhere".
