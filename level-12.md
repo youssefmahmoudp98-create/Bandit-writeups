@@ -5,6 +5,7 @@ Goal: find the password stored in `data.txt`, where all lowercase and uppercase 
 What was done:
 
 `ls`                                          -> confirmed that `data.txt` was present in the home directory
+
 `cat data.txt | tr 'a-zA-Z' 'n-za-mN-ZA-M'`   -> replaced each letter with the character 13 positions away and displayed the decoded password
 
 After logging in, `ls` was used to confirm that `data.txt` was present in the home directory.
