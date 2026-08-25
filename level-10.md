@@ -1,13 +1,17 @@
-Level 9 to 10
+## Level 9 to 10
 
 Goal: find the password in "data.txt", which is contained within one of the few human-readable strings preceded by several "=" characters.
 
 What was done:
 
 "ls"                         -> confirmed that "data.txt" was present in the home directory
+
 "grep == data.txt"           -> produced "grep: data.txt: binary matches", indicating that the file was treated as binary data
+
 "strings data.txt"           -> extracted human-readable strings from the binary file
+
 "strings data.txt | grep == data.txt" -> incorrectly supplied "data.txt" to "grep" as a file argument rather than searching the piped input
+
 "strings data.txt | grep ==" -> filtered the extracted strings for lines containing "==" and displayed the relevant password
 
 After logging in, "ls" was used to confirm that "data.txt" was present in the home directory.
