@@ -5,28 +5,52 @@ Goal: find the password stored in `data.txt`, which is a hexdump of a repeatedly
 What was done:
 
 `ls`                                      -> confirmed that `data.txt` was present in the home directory
+
 `file data.txt`                           -> identified the file as ASCII text
+
 `mkdir /tmp/newfolder`                    -> created a temporary directory to store the files produced during the extraction process
+
 `xxd -r data.txt > /tmp/newfolder/file1`  -> reversed the hexdump and wrote the resulting binary data to `file1`
+
 `file /tmp/newfolder/file1`               -> identified `file1` as gzip-compressed data
+
 `gzip -d file1`                           -> attempted to decompress the gzip file but produced an unknown suffix error
+
 `mv file1 file1.gz`                       -> renamed the file with the expected `.gz` suffix
 `gzip -d file1.gz`                        -> decompressed the gzip file
-`file file1`                              -> identified the resulting file as bzip2-compressed data
-`bzip2 -d file1`                          -> decompressed the bzip2 file and produced `file1.out`
+
+`file file1`                              -> identified the resulting file as
+
+bzip2-compressed data
+`bzip2 -d file1`                          -> decompressed the bzip2 file and produced
+
+`file1.out`
 `file file1.out`                          -> identified the result as a POSIX tar archive
+
 `mv file1.out file1.tar`                  -> renamed the archive with the `.tar` suffix
+
 `tar -xf file1.tar`                       -> extracted the archive and revealed `data5.bin`
+
 `file data5.bin`                          -> identified `data5.bin` as a POSIX tar archive
+
 `mv data5.bin data5.tar`                  -> renamed the archive with the `.tar` suffix
+
 `tar -xf data5.tar`                       -> extracted the archive and revealed the next compressed file
+
 `file data6.bin`                          -> identified the next file as another POSIX tar archive
+
 `mv data6.bin data6.tar`                  -> renamed the archive with the `.tar` suffix
+
 `tar -xf data6.tar`                       -> extracted the archive and revealed `data8.bin`
+
 `file data8.bin`                          -> identified `data8.bin` as gzip-compressed data
+
 `mv data8.bin data8.gz`                   -> renamed the file with the expected `.gz` suffix
+
 `gzip -d data8.gz`                        -> decompressed the gzip file and produced `data8`
+
 `file data8`                              -> identified the final file as ASCII text
+
 `cat data8`                               -> displayed the password
 
 After logging in, `ls` was used to confirm that `data.txt` was present in the home directory. The next step was to inspect the file with `file data.txt`.
