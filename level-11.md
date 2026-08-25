@@ -5,6 +5,7 @@ Goal: find the password stored in `data.txt`, which is encoded in base64.
 What was done:
 
 `ls`                       -> confirmed that `data.txt` was present in the home directory
+
 `cat data.txt | base64 -d` -> passed the contents of `data.txt` to `base64` and decoded the base64-encoded text
 
 After logging in, `ls` was used to confirm that `data.txt` was present in the home directory.
