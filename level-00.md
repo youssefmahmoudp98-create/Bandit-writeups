@@ -13,5 +13,3 @@ What was understood: a port is not a location, it is which specific program on t
 Vulnerability type: none, this level is just the login step, no vulnerability involved.
 
 Real world version: not applicable yet, this level was setup only.
-
-Cloud version: not yet, will fill in later.
