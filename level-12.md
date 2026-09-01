@@ -35,5 +35,3 @@ What was understood:
 Vulnerability type: this level demonstrates character substitution and the processing of encoded data through command-line pipelines. It also demonstrates why simple character-rotation schemes provide no meaningful confidentiality when the transformation is known or easily reversible.
 
 Real world version: character substitution and similar encoding schemes can appear in obfuscation, legacy systems, puzzles, and poorly designed attempts to conceal sensitive information. Security analysis may require identifying the transformation being applied and reversing it to recover the original data.
-
-Cloud version: not yet explored.
