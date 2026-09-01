@@ -11,5 +11,3 @@ What was understood: - on its own can be interpreted as stdin by command-line to
 Vulnerability type: special-character filename ambiguity — a case where a tool's default interpretation of an input doesn't match what was actually intended, which might lead to unexpected behaviour by engineers leading to potential security issues on the broader scale
 
 Real world version: This level demonstrates a broader security principle: inputs can have special meanings depending on how they are interpreted by a program. In real systems, failing to distinguish user-controlled data from command or control syntax can lead to security vulnerabilities. This can appear in areas such as command injection, argument injection, path traversal, and other forms of input-handling flaws.
-
-Cloud version: not yet, will fill in later.
