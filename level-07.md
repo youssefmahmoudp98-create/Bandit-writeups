@@ -67,5 +67,3 @@ What was understood:
 Vulnerability type: this level demonstrates filesystem enumeration, ownership-based filtering, permission boundaries, and error handling. It also demonstrates the importance of correctly distinguishing between relative and absolute paths when processing filesystem data.
 
 Real world version: applications, scripts, and security tools frequently search filesystems using ownership, permissions, and other attributes. Incorrect assumptions about filesystem boundaries, path resolution, or permission errors can cause searches to miss sensitive files or expose information that should not be accessible.
-
-Cloud version: not yet explored.
