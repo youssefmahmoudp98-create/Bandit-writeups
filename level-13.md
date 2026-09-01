@@ -96,5 +96,3 @@ What was understood:
 Vulnerability type: this level demonstrates how file formats, compression layers, archives, and encoded representations can be chained together. It also demonstrates why identifying the actual format of a file is important before attempting to process it, particularly when file extensions cannot be trusted to accurately represent the underlying data.
 
 Real world version: security analysts frequently encounter files that are compressed, archived, encoded, or deliberately disguised using misleading filenames or multiple layers of transformation. Correctly identifying each layer allows the analyst to safely extract and inspect the underlying data.
-
-Cloud version: not yet explored.
