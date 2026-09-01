@@ -2,7 +2,9 @@ Goal: read the password from a file literally named -, located in the home direc
 
 What was done:
 
-ls cat - -> produced no error, but no output either, and did not return control of the terminal cat ./- -> worked, password was printed
+ls cat - -> produced no error, but no output either, and did not return control of the terminal
+
+cat ./- -> worked, password was printed
 
 ls showed a file named -. Running cat - didn't fail outright, but it didn't do anything either — no error, no output, and the terminal didn't return to a normal prompt. Some research was needed to understand why: - is treated by cat as stdin (figured out after prior research as well), and the terminal was waiting for further input to apply that flag to, rather than treating - as a filename at all. To fix this, the filename needed to be expressed in a way that couldn't be mistaken for a flag. This led to learning that . means "in this directory" and / is the separator between directory levels, so ./- says "the file named -, in this directory" explicitly. Running cat ./- printed the password.
 
