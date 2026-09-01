@@ -37,5 +37,3 @@ What was understood:
 Vulnerability type: this level demonstrates efficient processing of structured text through command composition. It also demonstrates how individual command-line utilities can be combined to transform and filter data.
 
 Real world version: the same pattern is useful when processing logs, datasets, command output, and other large collections of text. Sorting data before filtering or deduplicating it can make it possible to identify unique or anomalous entries efficiently.
-
-Cloud version: not yet explored.
