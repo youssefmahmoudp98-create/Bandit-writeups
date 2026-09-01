@@ -25,5 +25,3 @@ What was understood:
 Vulnerability type: this level demonstrates basic text searching and the importance of efficiently locating specific information within potentially large files.
 
 Real world version: text-searching tools such as `grep` are commonly used when inspecting logs, configuration files, source code, and other large text-based datasets. Searching for a known identifier or pattern can quickly isolate relevant information without manually inspecting the entire file.
-
-Cloud version: not yet explored.
