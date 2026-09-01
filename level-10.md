@@ -52,5 +52,3 @@ What was understood:
 Vulnerability type: this level demonstrates the distinction between binary and human-readable data and the importance of correctly handling command input. It also demonstrates how command pipelines can be used to transform binary data into searchable text before applying further filtering.
 
 Real world version: binary files often contain embedded human-readable strings such as configuration values, identifiers, error messages, or other sensitive information. Security analysis tools frequently extract and search these strings when inspecting unknown binaries or potentially malicious files.
-
-Cloud version: not yet explored.
