@@ -29,5 +29,3 @@ What was understood: the shell's job (splitting on spaces, handling quotes) and 
 Vulnerability type: special-character filename ambiguity — the same underlying category as level 1 to 2, compounded here by two independent forms of ambiguity (option interpretation and word-splitting) that had to be resolved separately, and by a subtler trap where a fix that looks correct (wrapping everything in one set of quotes) actually removes the very mechanism it was meant to rely on.
 
 Real world version: this extends the level 1 to 2 lesson — a program's interpretation of input not matching what was intended — by showing that a plausible-looking fix can still be wrong if it misunderstands *how* a protective mechanism actually works, not just whether it's present. In real systems, this maps to input sanitization that looks correct on the surface but fails because the escaping or boundary logic isn't applied at the layer the parser actually reads it at.
-
-Cloud version: not yet, will fill in later.
