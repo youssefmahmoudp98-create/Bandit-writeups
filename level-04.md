@@ -34,5 +34,3 @@ What was understood:
 Vulnerability type: this level demonstrates the importance of understanding filesystem structure and the distinction between files and directories. It also demonstrates that hidden files are not inherently protected; they are simply omitted from normal directory listings. If sensitive information is stored in a hidden file, it can still be accessed when the appropriate permissions are available.
 
 Real world version: the same filesystem concepts appear when investigating configuration files, application directories, logs, credentials, and other files that may not appear in a standard directory listing.
-
-Cloud version: not yet explored..
