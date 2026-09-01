@@ -24,5 +24,3 @@ What was understood:
 Vulnerability type: this level demonstrates how encoded data can be transformed back into its original representation using standard command-line utilities. Base64 is an encoding mechanism rather than encryption, meaning encoded data can be decoded when the encoding method is known.
 
 Real world version: base64 is frequently used to represent data in applications, APIs, configuration files, authentication mechanisms, and other systems. Treating base64-encoded data as if it were encrypted can lead to sensitive information being exposed when the encoded value is decoded.
-
-Cloud version: not yet explored.
