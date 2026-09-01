@@ -14,5 +14,3 @@ What was understood: `ls` and `cat` were already understood from prior documenta
 Vulnerability type: sensitive information stored in a plain, readable file.
 
 Real world version: this is what happens when a password or API key gets left sitting in a config file or accidentally committed to a public repo, the credential is right there for anyone who can read the file.
-
-Cloud version: not yet, will fill in later.
