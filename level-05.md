@@ -36,5 +36,3 @@ What was understood:
 Vulnerability type: this level demonstrates several command-line parsing concepts that can become relevant to security when filenames or other inputs are handled incorrectly. It combines option interpretation with filename pattern matching, demonstrating why the exact way input is parsed by the shell and the receiving program matters.
 
 Real world version: the same concepts appear in scripts and applications that process user-controlled filenames or other command-line arguments. Incorrect handling of leading dashes, wildcards, or other special input can cause a program to operate on unintended files or interpret data as control information.
-
-Cloud version: not yet explored.
