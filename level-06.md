@@ -68,5 +68,3 @@ What was understood:
 Vulnerability type: this level demonstrates how command-line tools interpret options, filenames, wildcards, and other special syntax. Incorrect assumptions about how a command interprets its arguments can lead to unexpected behavior, particularly when filenames or other inputs are controlled externally.
 
 Real world version: the same concepts appear in scripts and applications that process filenames or other command-line arguments. Incorrect handling of special characters, wildcards, options, or user-controlled input can cause programs to interpret data as control information or operate on unintended files.
-
-Cloud version: not yet explored.
